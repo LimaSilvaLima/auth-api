@@ -28,8 +28,8 @@ public class Product {
 
 
     public Product(ProductRequestDTO data) {
-        this.price = data.Price();
-        this.name = data.Name();
+        this.price = data.price();
+        this.name = data.name();
     }
 
 }
