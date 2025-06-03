@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 import jakarta.validation.Valid;
+
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -32,8 +35,13 @@ public class ProductController {
     }
 
     @GetMapping 
-    public ResponseEntity<?> getAllProducts() {
-        return ResponseEntity.ok(this.repository.findAll().stream().map(ProductResponseDTO::new).toList());
+    public ResponseEntity getAllProducts() {
+        
+        List<ProductResponseDTO> productList = this.repository.findAll()
+            .stream()
+            .map(ProductResponseDTO::new)
+            .toList();
+        return ResponseEntity.ok(productList);
     }
     
 
