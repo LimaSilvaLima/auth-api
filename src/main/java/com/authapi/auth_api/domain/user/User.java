@@ -1,5 +1,4 @@
-package com.authapi.auth_api.domain.product;
-
+package com.authapi.auth_api.domain.user;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -9,27 +8,21 @@ import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
-import java.math.BigInteger;
+import lombok.NoArgsConstructor;;
 
-@Entity(name = "product")
-@Table(name = "product")
+@Entity(name = "users")
+@Table(name = "users")
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
-public class Product {
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
-    private String name;
-    private Integer price;
-
-
-    public Product(ProductRequestDTO data) {
-        this.price = data.price();
-        this.name = data.name();
-    }
+    private String login;
+    private String password;
+    private String role;
 
 }
