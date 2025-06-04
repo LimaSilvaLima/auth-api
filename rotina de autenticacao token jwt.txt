@@ -1,0 +1,8 @@
+
+1 - criar entity e tabela de ususario
+	1.1 criar enum role - definir role e get
+	1.2 criar metodo repository de findbulogin retornand Userdetails
+2 - criar o service de autenticação
+	2.1 - criar AuthorizationService
+	
+	
