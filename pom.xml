@@ -80,16 +80,14 @@
 		<dependency>
       		<groupId>org.springframework.security</groupId>
       		<artifactId>spring-security-test</artifactId>
-     		 <scope>test</scope>
+     		<scope>test</scope>
 		 </dependency>	 
-		 <!--  java-jwt
 		 <dependency>
 			<groupId>com.auth0</groupId>
 			<artifactId>java-jwt</artifactId>
 			<version>4.5.0</version>
-			</dependency>
-			-->
-		</dependencies>
+		</dependency>
+	</dependencies>
 
 	<build>
 		<plugins>
