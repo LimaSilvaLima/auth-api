@@ -3,6 +3,9 @@
 	1.1 criar enum role - definir role e get
 	1.2 criar metodo repository de findbulogin retornand Userdetails
 2 - criar o service de autenticação
-	2.1 - criar AuthorizationService
+	2.1 - criar AuthorizationServicec/ implments UserDetailsService
+3 - criar o pacote infra para conter as configuraçoes de autenticacao
+	3.1 - pacote: security com clase : SecurityConfigurations - onde criar securityfilterchain
+	
 	
 	
